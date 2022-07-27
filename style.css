@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert();
+}
+
+.nav__links{
+    display: flex;
+    list-style-type: none;
+    padding-right: 8px;
+    
+}
+
+.nav__link{
+    justify-content: space-around;
+    padding-right: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.button{
+    background-color: black;
+    padding: 16px;
+    border-radius: 50px;
+}
+
+.header__img{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter: opacity(70%);
+}
+
+.slogan__wrapper{
+    margin-top: 35%;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.slogan{
+    color: #242424;
+    font-size: 32px;
+}
