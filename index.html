@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Project</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,7 +33,40 @@
         </nav>
     </section>
     <section id="about">
-
+        <div class="container about__container">
+            <div class="section__title">
+                ABOUT
+            </div>
+            <div class="about__body">
+                <div class="about__text--wrapper">
+                    <div class="about__text">
+                        Here at Find Your Movie we have a wide selection of movies to satisy any of your movie cravings.<br></br>
+                        From action, comedy, romance, to thrillers we have it all! <br></br>
+                        So find your movie and sit back and enjoy the cinematic art.
+                    </div>
+                </div>
+                <div class="about__photo">
+                    <img src="./assests/about.image.jpeg" alt="" class="about__photo--img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="movies">
+        <div class="container movie__container">
+            <div class="section__title">
+                FIND YOUR MOVIE
+            </div>
+            <div class="input__wrapper">
+                <input type="text" placeholder="Search by Title" onkeyup="search(event)">
+                <button class="search__wrapper" onclick="searchWithButton(event)">
+                    <i class="fas fa-search"></i>
+                </button>            
+            </div>
+            <div class="movies">
+                
+            </div>
+        </div>
     </section>
 </body>
+<script src="./index.js"></script>
 </html>
